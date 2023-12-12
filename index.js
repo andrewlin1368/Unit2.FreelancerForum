@@ -88,4 +88,9 @@ function update() {
   updateTable(freelaners.length - 1);
 }
 
-setInterval(update, 10000);
+let run = 0;
+let count = setInterval(() => {
+  update();
+  run += 1;
+  if (run === 50) clearInterval(count);
+}, 5000);
