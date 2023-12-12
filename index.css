@@ -19,3 +19,9 @@ td {
   margin: auto;
   width: 33%;
 }
+
+.td1,
+.td2,
+.td3 {
+  font-weight: bolder;
+}
